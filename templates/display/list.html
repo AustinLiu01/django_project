@@ -1,0 +1,50 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+{% load staticfiles %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+    首页
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+<!-- 定义放置数据标题的div容器 -->
+<table class="table table-hover">
+    <div class="row" style="margin-top: 50px;">
+        <div class="offset-md-11">
+            <tbody align="center">
+                <tr>
+                    <td>Mode</td>
+                    <td>{{ mode }}</td>
+                </tr>
+                <tr>
+                    <td>Input voltage</td>
+                    <td>{{ v_in }}</td>
+                </tr>
+                <tr>
+                    <td>Input current</td>
+                    <td>{{ i_in }}</td>
+                </tr>
+                <tr>
+                    <td>Output voltage</td>
+                    <td>{{ v_out }}</td>
+                </tr>
+                <tr>
+                    <td>Output current</td>
+                    <td>{{ i_out }}</td>
+                </tr>
+                <tr>
+                    <td>Battery voltage</td>
+                    <td>{{ v_b }}</td>
+                </tr>
+                <tr>
+                    <td>Battery current</td>
+                    <td>{{ i_b }}</td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+</table>
+{% endblock content %}

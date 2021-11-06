@@ -1,0 +1,7 @@
+mode:charge
+v_in:0.11
+i_in:0.11
+v_out:0.11
+i_out:0.11
+v_b:0.11
+i_b:0.11
